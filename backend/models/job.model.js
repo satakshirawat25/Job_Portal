@@ -14,6 +14,10 @@ const jobSchema = new mongoose.Schema({
         type:String,
         require:true
     }],
+    experienceLevel:{
+        type:Number,
+        require:true
+    },
     salary:{
         type:Number,
         require:true
