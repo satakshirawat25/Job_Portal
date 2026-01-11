@@ -21,7 +21,8 @@ export const registerCompany = async(req,res)=>{
         //create company
         company=await Company.create({
             name:companyName,
-            userId:req.id
+            // userId:req.id
+            userId: req.userId 
         })
 
         return res.status(201).json({
